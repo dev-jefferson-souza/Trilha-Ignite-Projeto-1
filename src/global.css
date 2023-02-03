@@ -12,7 +12,13 @@
   --green-500: #00875f;
 }
 
+:focus {
+  outline: transparent;
+  box-shadow: 0 0 0 2px var(--green-500);
+}
+
 * {
+  scroll-behavior: smooth;
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
@@ -31,4 +37,10 @@ button {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 1rem;
+}
+
+input,
+textarea,
+button {
+  cursor: pointer;
 }
