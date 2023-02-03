@@ -22,6 +22,10 @@
   color: var(--green-300);
 }
 
+.content a:focus {
+  color: var(--green-300);
+}
+
 .post > header {
   display: flex;
   align-items: center;
@@ -37,14 +41,6 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-}
-
-.author img {
-  width: calc(3rem + 12px);
-  height: calc(3rem + 12px);
-  border-radius: 8px;
-  border: 4px var(--gray-800) solid;
-  outline: 2px solid var(--green-500);
 }
 
 .authorInfo strong {
@@ -109,4 +105,12 @@
 
 .commentForm button[type="submit"]:hover {
   background-color: var(--green-300);
+}
+
+.commentForm button[type="submit"]:focus {
+  background-color: var(--green-300);
+}
+
+.commentList {
+  margin-top: 2rem;
 }
