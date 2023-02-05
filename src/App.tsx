@@ -2,11 +2,15 @@ import styles from "./App.module.css";
 import "./global.css";
 
 import { Header } from "./components/Header/Header";
-import { Post } from "./components/Post/Post";
+import { Post, PostProps } from "./components/Post/Post";
 import { Sidebar } from "./components/Sidebar/Sidebar";
 
+interface Post extends PostProps {
+  id: number;
+}
+
 function App() {
-  const posts = [
+  const posts: Post[] = [
     {
       id: 1,
       author: {
